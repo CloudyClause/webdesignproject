@@ -16,5 +16,24 @@ $(function(){
     $("button").click(function(){
         $(".popup").hide()
     })
+
+    // 탭기능
+
+    $(".tab li").click(function(){
+        let num = $(this).index()
+        console.log(num)
+        // 기존의 on class 모두 제거
+        $(".tab li").removeClass("on")
+        $(this).addClass("on")
+        // 기존의 보이는 tab은 모두 숨기기
+        $(".wrap").hide()
+        // 선택된 번쨰 와 같은 번째
+        $(".wrap").eq(num).show()
+
+    })
+
+
 })
+
+
 
