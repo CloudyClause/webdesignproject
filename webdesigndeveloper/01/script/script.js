@@ -32,6 +32,14 @@ $(function(){
 
     })
 
+    // 상하슬라이드 초 단위로 반복 처리 함수
+    setInterval(function(){
+        $(".slide ul").animate({top:'-=' + 300},'slow', function(){
+            $(".slide ul li").first().appendTo(".slide ul")
+            $(".slide ul").css('top',0)
+        })
+    },3000)
+
 
 })
 

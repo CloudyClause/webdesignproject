@@ -27,6 +27,7 @@ li{
     margin-top: -200px;
     padding: 24px;
     display: none;
+    z-index: 102;
 }
 
 .popup h2{
@@ -98,6 +99,7 @@ header nav .gnb> li> .depth2{
     width: 100%;
     height: 160px;
     display: none;
+    z-index: 101;
 }
 
 header nav .gnb> li> .depth2 a{
@@ -114,8 +116,17 @@ header nav .gnb> li> .depth2 li:hover{
     width: 1200px;
     height: 300px;
     margin: 0 auto;
+    position: relative;
     /* 박스 크기 안에서만 보이기 초과는 숨김 */
     overflow: hidden;
+}
+
+.slide ul{
+    position: absolute;
+    top: 0;
+    width: 1200px;
+    height: 900px;
+    z-index: 100;
 }
 
 .contents{
@@ -195,11 +206,35 @@ header nav .gnb> li> .depth2 li:hover{
 .contents .banner{
     width: 400px;
     height: 200px;
+    position: relative;
+}
+
+.contents .banner h3{
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    transform: translate(-30%, -90%);
+    text-align: center;
+    border: 1px solid #fff;
 }
 
 .contents .go{
     width: 400px;
     height: 200px;
+    position: relative;
+}
+
+.contents .go h3{
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    transform: translate(-50%, -70%);
+    text-align: center;
+    border: 1px solid #fff;
 }
 
 footer{
