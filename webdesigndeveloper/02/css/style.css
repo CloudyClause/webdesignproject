@@ -116,13 +116,20 @@ header .cover nav .gnb >li .depth2 li:hover{
     overflow: hidden;
 }
 
-.slide .ul{
+.slide ul{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 3600px;
     height: 300px;
-    position: absolute;
-    left: 0;
-    top: 0;
+    display: flex;
     z-index: 100;
+}
+
+.slide ul li{
+    display: flex;
+    width: 1200px;
+    height: 300px;
 }
 
 .contents{
@@ -145,6 +152,7 @@ header .cover nav .gnb >li .depth2 li:hover{
     display: flex;
     padding: 0 10px;
     gap: 10px;
+    border-bottom: 1px solid #333;
 }
 
 .contents .board .tab .li{
@@ -161,10 +169,12 @@ header .cover nav .gnb >li .depth2 li:hover{
     color: #333;
 }
 
-.contents .board .tab .li .on{
+.contents .board .tab li.on{
     color: gold;
     border-bottom: 3px solid hotpink;
 }
+
+
 
 .contents .board .notice{
     width: 100%;
@@ -191,6 +201,8 @@ header .cover nav .gnb >li .depth2 li:hover{
 .list2{
     display: none;
 }
+
+
 
 .banner{
     width: 400px;
