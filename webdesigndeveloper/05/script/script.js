@@ -7,6 +7,6 @@ $(function(){
     })
 
     setInterval(function(){
-        $(".slide li").animate({})
+        $(".slide li").animate({top: }})
     })
 })
