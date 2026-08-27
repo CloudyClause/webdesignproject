@@ -1,0 +1,3 @@
+18:07:17:429 [CRITICAL]	SharedConnection - Failed to open WinHTTP Session. 매개 변수가 틀립니다.
+, last error code = 87 
+18:07:17:430 [ERROR]	Failed to Configure Secure Protocols. WinHTTP Incorrect Handle Type. last error code = 12018 
