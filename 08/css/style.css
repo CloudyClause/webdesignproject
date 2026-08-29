@@ -297,7 +297,7 @@ footer .fwrap .footerwrap .sns{
     display: flex;
     gap: 5px;
     justify-content: space-between;
-    background: gold;
+    /* background: gold; */
 }
 footer .fwrap .footerwrap .sns li{
     height: 100%;
