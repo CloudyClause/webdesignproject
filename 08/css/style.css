@@ -1,0 +1,360 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕", "malgun gothic", sans-serif;
+    background: #fff;
+    color: #333;
+}
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.popup{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    border: 1px solid #333;
+    background: #fff;
+    margin: 20px 0;
+    z-index: 102;
+}
+.popup h2{
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    text-align: center;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.popup p{
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.popup button{
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    cursor: pointer;
+}
+
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .hwrap{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .hwrap h1{
+    width: 200px;
+    height: 100%;
+}
+
+header .hwrap nav .gnb{
+    width: 600px;
+    height: 50px;
+    display: flex;
+    margin-top: 50px;
+}
+
+header .hwrap nav .gnb>li{
+    width: 150px;
+    height: 100%;
+    position: relative;
+}
+header .hwrap nav .gnb>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    color: #333;
+}
+header .hwrap nav .gnb>li:hover a{
+    background: #f18405;
+    color: #fff;
+}
+
+header .hwrap nav .gnb>li>.depth2{
+    width: 100%;
+    height: 160px;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    display: none;
+    z-index: 100;
+}
+header .hwrap nav .gnb>li>.depth2>li{
+    width: 100%;
+    height: 40px;
+}
+header .hwrap nav .gnb>li>.depth2>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    background: #333;
+    color: #fff;
+}
+header .hwrap nav .gnb>li>.depth2>li:hover a{
+    background: #5867ba;
+}
+header .hwrap .gnbbg{
+    width: 1200px;
+    height: 160px;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    display: none;
+    background: #333;
+    z-index: 99;
+}
+
+.slide{
+    width: 1200px;
+    height: 300px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slide ul{
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    left: 0;
+}
+
+
+.contents{
+    width: 1200px;
+    height: 200px;
+    display: flex;
+    margin: 0 auto;
+    border-bottom: 1px solid #333;
+}
+
+.contents .board{
+    width: 400px;
+    height: 100%;
+}
+.contents .board .tab{
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    border-bottom: 1px solid #333;
+}
+.contents .board .tab p{
+    display: block;
+    width: 100%;
+    height: 100px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contents .board .wrap .notice{
+    width: 100%;
+    height: 150px;
+}
+.contents .board .wrap .notice li{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: space-between;
+    display: flex;
+}
+
+.contents .board .wrap .notice li a{
+    color: #333;
+}
+
+.contents .gallery{
+    width: 400px;
+    height: 100%;
+}
+.contents .gallery .tab{
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    border-bottom: 1px solid #333;
+}
+.contents .gallery .tab p{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.contents .gallery .wrap .gimage{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    gap: 25px;
+}
+.contents .gallery .wrap .gimage li{
+    width: 100px;
+    height: 100px;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contents .go{
+    width: 400px;
+    height: 200px;
+    position: relative;
+}
+.contents .go img{
+    width: 100%;
+    height: 100%;
+}
+
+.contents .go .go1{
+    position: absolute;
+    left: 45px;
+    top: 120px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+.contents .go .go2{
+    position: absolute;
+    left: 170px;
+    top: 120px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+.contents .go .go3{
+    position: absolute;
+    left: 300px;
+    top: 120px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+footer .fwrap{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+footer .fwrap .copyright{
+    width: 1000px;
+    height: 100%;
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+footer .fwrap .footerwrap{
+    width: 200px;
+    height: 100%;
+}
+footer .fwrap .footerwrap .sns{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    background: gold;
+}
+footer .fwrap .footerwrap .sns li{
+    height: 100%;
+}
+footer .fwrap .footerwrap .sns li a{
+    display: block;
+    color: #333;
+    line-height: 50px;
+    text-align: center;
+    font-size: 10px;
+    padding: 0 5px;
+}
+
+footer .fwrap .footerwrap .familylist{
+    width: 200px;
+    height: 50px;
+    position: relative;
+}
+footer .fwrap .footerwrap .familylist button{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #333;
+    background: #fff;
+    color: #333;
+}
+footer .fwrap .footerwrap .familylist .familysite{
+    width: 100%;
+    height: 120px;
+    border: 1px solid #333;
+    background: #fff;
+    color: #333;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    padding-bottom: 20px;
+    display: none;
+}
+
+footer .fwrap .footerwrap .familylist .familysite li{
+    width: 100%;
+    height: 30px;
+}
+footer .fwrap .footerwrap .familylist .familysite li a{
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+footer .fwrap .footerwrap .familylist .familysite li:hover a{
+    background: #5867ba;
+    color: #fff;
+}
+
+
+
+
+
